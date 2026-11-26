@@ -66,7 +66,7 @@
           "icone": "grafico",
           "titulo": "¿Regresión?",
           "sub": "caso por caso",
-          "detalhe": "Total por categoría y, con --base, la comparación con la versión anterior: el caso que pasaba en todos los intentos y ahora falla es REGRESSÃO, y el script sale con 1. El total igual puede esconder un intercambio."
+          "detalhe": "Total por categoría y, con --base, la comparación con la versión anterior: el caso que pasaba en todos los intentos y ahora falla es REGRESSêO, y el script sale con 1. El total igual puede esconder un intercambio."
         }
       ],
       "volta": "Una falla nueva se vuelve un caso nuevo en el conjunto",
@@ -129,7 +129,7 @@
         "abas": [
           {
             "rot": "Salida capturada (19/10/2026)",
-            "html": "<pre>armadilha  0/1\nbug        5/5\nduvida     2/2\npedido     2/2\ntotal      9/10 (90%)  → /tmp/ensaio-evals/v1.tsv\nsaída: 0\narmadilha  1/1\nbug        5/5\nduvida     2/2\npedido     1/2\ntotal      9/10 (90%)  → /tmp/ensaio-evals/v2.tsv\nMELHOROU  t07\nREGRESSÃO t06 (passava em v1.tsv)\n1 regressão(ões): não promova\nsaída: 1</pre><p>Las dos versiones hacen 9/10. La versión 2 arregló la trampa (t07) y rompió un pedido (t06, que termina en \"?\" y pasó a ser duda). Solo el total diría \"empate\".</p>"
+            "html": "<pre>armadilha  0/1\nbug        5/5\nduvida     2/2\npedido     2/2\ntotal      9/10 (90%)  → /tmp/ensaio-evals/v1.tsv\nsaída: 0\narmadilha  1/1\nbug        5/5\nduvida     2/2\npedido     1/2\ntotal      9/10 (90%)  → /tmp/ensaio-evals/v2.tsv\nMELHOROU  t07\nREGRESSêO t06 (passava em v1.tsv)\n1 regressêo(ões): nêo promova\nsaída: 1</pre><p>Las dos versiones hacen 9/10. La versión 2 arregló la trampa (t07) y rompió un pedido (t06, que termina en \"?\" y pasó a ser duda). Solo el total diría \"empate\".</p>"
           },
           {
             "rot": "Error común: mirar solo el total",
@@ -154,7 +154,7 @@
         "abas": [
           {
             "rot": "Salida capturada (19/10/2026)",
-            "html": "<pre>armadilha  1/1\nbug        5/5\nduvida     2/2\npedido     2/2\ntotal      10/10 (100%)  → /tmp/ensaio-evals/real.tsv\nMELHOROU  t07\nsem regressão\nsaída: 0\n11</pre><p>Claude Code 2.1.303, modelo estándar de la suscripción, 1 min 19 s para los 10 casos. El marcador del modelo puede cambiar en tu máquina; el archivo con 11 líneas (encabezado + 10), no.</p>"
+            "html": "<pre>armadilha  1/1\nbug        5/5\nduvida     2/2\npedido     2/2\ntotal      10/10 (100%)  → /tmp/ensaio-evals/real.tsv\nMELHOROU  t07\nsem regressêo\nsaída: 0\n11</pre><p>Claude Code 2.1.303, modelo estándar de la suscripción, 1 min 19 s para los 10 casos. El marcador del modelo puede cambiar en tu máquina; el archivo con 11 líneas (encabezado + 10), no.</p>"
           },
           {
             "rot": "10 de 10 es un problema",
@@ -173,7 +173,7 @@
           "titulo": "E13 · La regresión escondida",
           "min": "10 min",
           "texto": "Ejecuta el ensayo de las dos versiones.",
-          "pronto": "v1 imprime <code>total      9/10 (90%)</code> y <code>saída: 0</code>; v2 imprime <code>REGRESSÃO t06 (passava em v1.tsv)</code> y <code>saída: 1</code>."
+          "pronto": "v1 imprime <code>total      9/10 (90%)</code> y <code>saída: 0</code>; v2 imprime <code>REGRESSêO t06 (passava em v1.tsv)</code> y <code>saída: 1</code>."
         },
         {
           "id": "e14",
@@ -201,7 +201,7 @@
             "Empate, se puede promover",
             "Que la versión 2 es mejor",
             "Nada, porque el total es igual",
-            "REGRESSÃO t06: no promuevas"
+            "REGRESSêO t06: no promuevas"
           ],
           "certa": 3,
           "explica": "La comparación es caso por caso: t06 pasaba y ahora falla. Una regresión bloquea aunque el total sea igual o mayor.",

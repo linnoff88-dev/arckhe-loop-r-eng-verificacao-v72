@@ -108,7 +108,7 @@
         "abas": [
           {
             "rot": "Salida capturada (19/10/2026)",
-            "html": "<pre>a01  R1=sim R2=sim R3=sim\na02  R1=nao R2=sim R3=nao\na03  R1=sim R2=sim R3=sim\n(… a04 a a10 …)\n→ /tmp/juiz-falso.csv\n10 artefatos rotulados pelos dois\nR1  concordância 80%  kappa 0.55  REESCREVA ou troque o juiz  (discorda em a03 a09)\nR2  concordância 70%  kappa 0.00  REESCREVA ou troque o juiz  (discorda em a03 a05 a09)\nR3  concordância 100%  kappa 1.00  ok\nJUIZ DESCALIBRADO em R1, R2: não use para aprovar\nsaída: 1</pre><p>El juez falso dice \"sí\" en R2 para todo: nunca revisa el diff. La calibración lo detectó. Fíjate en R1: 80% de concordancia parece aprobar, pero el kappa (0,55) muestra que buena parte es azar.</p>"
+            "html": "<pre>a01  R1=sim R2=sim R3=sim\na02  R1=nao R2=sim R3=nao\na03  R1=sim R2=sim R3=sim\n(… a04 a a10 …)\n→ /tmp/juiz-falso.csv\n10 artefatos rotulados pelos dois\nR1  concordância 80%  kappa 0.55  REESCREVA ou troque o juiz  (discorda em a03 a09)\nR2  concordância 70%  kappa 0.00  REESCREVA ou troque o juiz  (discorda em a03 a05 a09)\nR3  concordância 100%  kappa 1.00  ok\nJUIZ DESCALIBRADO em R1, R2: nêo use para aprovar\nsaída: 1</pre><p>El juez falso dice \"sí\" en R2 para todo: nunca revisa el diff. La calibración lo detectó. Fíjate en R1: 80% de concordancia parece aprobar, pero el kappa (0,55) muestra que buena parte es azar.</p>"
           },
           {
             "rot": "Por qué kappa",
@@ -156,7 +156,7 @@
           "titulo": "E16 · Calibrar el juez falso",
           "min": "10 min",
           "texto": "Ejecuta el ensayo con el juez falso.",
-          "pronto": "la última línea antes del código es <code>JUIZ DESCALIBRADO em R1, R2: não use para aprovar</code> y <code>saída: 1</code>."
+          "pronto": "la última línea antes del código es <code>JUIZ DESCALIBRADO em R1, R2: nêo use para aprovar</code> y <code>saída: 1</code>."
         },
         {
           "id": "e17",

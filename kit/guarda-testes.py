@@ -4,8 +4,8 @@
   congelar <repo>   grava o hash de cada arquivo protegido e o mínimo de testes, FORA do repo
   conferir <repo>   sai 0 só se nada protegido mudou, nada novo apareceu e os testes passam todos, sem pular
 
-Variáveis: GUARDA_DIR (padrão ~/.local/state/guarda-testes/<repo>), TESTE (padrão "python3 -m pytest -q"),
-PROTEGIDOS (padrão: tests/ *conftest.py pytest.ini pyproject.toml setup.cfg tox.ini).
+Variáveis: GUARDA_DIR (padrêo ~/.local/state/guarda-testes/<repo>), TESTE (padrêo "python3 -m pytest -q"),
+PROTEGIDOS (padrêo: tests/ *conftest.py pytest.ini pyproject.toml setup.cfg tox.ini).
 """
 import hashlib, json, os, re, subprocess, sys
 from pathlib import Path

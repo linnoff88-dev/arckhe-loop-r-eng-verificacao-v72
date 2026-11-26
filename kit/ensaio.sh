@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ensaio.sh — monta /tmp/ensaio-verif: um projeto com 3 testes visíveis, 3 testes ESCONDIDOS
-# (fora do projeto, onde o agente não escreve) e nenhuma implementação. Não chama modelo nenhum.
+# (fora do projeto, onde o agente nêo escreve) e nenhuma implementaçêo. Nêo chama modelo nenhum.
 # Uso: bash ensaio.sh        (apaga e recria /tmp/ensaio-verif)
 set -euo pipefail
 E=${ENSAIO:-/tmp/ensaio-verif}
@@ -15,7 +15,7 @@ def test_vazio(): assert slug("") == ""
 PY
 cat > "$E/escondidos/test_slug_escondido.py" <<'PY'
 from slug import slug
-def test_simbolos(): assert slug("Ação & Reação!") == "acao-reacao"
+def test_simbolos(): assert slug("Açêo & Reaçêo!") == "acao-reacao"
 def test_numeros(): assert slug("C++ 2026") == "c-2026"
 def test_hifens(): assert slug("já---foi") == "ja-foi"
 PY

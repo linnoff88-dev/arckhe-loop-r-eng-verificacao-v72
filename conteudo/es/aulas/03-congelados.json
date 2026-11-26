@@ -127,12 +127,12 @@
         {
           "rot": "Terminal · el agujero (PROTEGIDOS de ejemplo)",
           "icone": "play",
-          "conteudo": "K=~/projetos/loop-r-eng-verificacao-v72/kit; L=~/projetos/execucao-longa/tools\nbash $K/ensaio.sh > /dev/null && cd /tmp/ensaio-verif/proj\nprintf '#!/usr/bin/env bash\\nexec %s/agente-falso.sh conftest\\n' $K > /tmp/agente-conftest.sh\nchmod +x /tmp/agente-conftest.sh\n$L/novo-longrun.sh $PWD slug > /dev/null && D=$(ls -d $PWD/longrun/*)\necho \"Implemente slug() em slug.py. Não mexa em tests/.\" > $D/prompt.md\ncat > $D/loop.env <<'ENV'\nTESTE_RAPIDO=\"python3 -m pytest -q\"\nTESTE_FINAL=\"python3 -m pytest -q\"\nPROTEGIDOS=\"tests/ pytest.ini\"\nPERMITIDOS=\"slug.py\"\nMAX_CICLOS=3\nMIN_CICLO=2\nMEM=1G\nESTAGNACAO=3\nENV\ngit add -A && git commit -qm \"longrun: pasta\"\nCODEX_BIN=/tmp/agente-conftest.sh $L/loop-longrun.sh $D; echo \"saída: $?\""
+          "conteudo": "K=~/projetos/loop-r-eng-verificacao-v72/kit; L=~/projetos/execucao-longa/tools\nbash $K/ensaio.sh > /dev/null && cd /tmp/ensaio-verif/proj\nprintf '#!/usr/bin/env bash\\nexec %s/agente-falso.sh conftest\\n' $K > /tmp/agente-conftest.sh\nchmod +x /tmp/agente-conftest.sh\n$L/novo-longrun.sh $PWD slug > /dev/null && D=$(ls -d $PWD/longrun/*)\necho \"Implemente slug() em slug.py. Nêo mexa em tests/.\" > $D/prompt.md\ncat > $D/loop.env <<'ENV'\nTESTE_RAPIDO=\"python3 -m pytest -q\"\nTESTE_FINAL=\"python3 -m pytest -q\"\nPROTEGIDOS=\"tests/ pytest.ini\"\nPERMITIDOS=\"slug.py\"\nMAX_CICLOS=3\nMIN_CICLO=2\nMEM=1G\nESTAGNACAO=3\nENV\ngit add -A && git commit -qm \"longrun: pasta\"\nCODEX_BIN=/tmp/agente-conftest.sh $L/loop-longrun.sh $D; echo \"saída: $?\""
         },
         {
           "rot": "Terminal · la corrección (conftest protegido + guardia como test final)",
           "icone": "escudo",
-          "conteudo": "bash $K/ensaio.sh > /dev/null && cd /tmp/ensaio-verif/proj        # recomeça do zero\nexport GUARDA_DIR=/tmp/ensaio-verif/guarda\npython3 $K/guarda-testes.py congelar . > /dev/null\n$L/novo-longrun.sh $PWD slug > /dev/null && D=$(ls -d $PWD/longrun/*)\necho \"Implemente slug() em slug.py. Não mexa em tests/.\" > $D/prompt.md\ncat > $D/loop.env <<ENV\nTESTE_RAPIDO=\"python3 -m pytest -q\"\nTESTE_FINAL=\"GUARDA_DIR=$GUARDA_DIR python3 $K/guarda-testes.py conferir .\"\nPROTEGIDOS=\"tests/ pytest.ini *conftest.py\"\nPERMITIDOS=\"slug.py\"\nMAX_CICLOS=3\nMIN_CICLO=2\nMEM=1G\nESTAGNACAO=3\nENV\ngit add -A && git commit -qm \"longrun: pasta\"\nCODEX_BIN=/tmp/agente-conftest.sh $L/loop-longrun.sh $D; echo \"saída: $?\"\nls conftest.py; grep -c \"revertido pelo loop\" $D/failures.md"
+          "conteudo": "bash $K/ensaio.sh > /dev/null && cd /tmp/ensaio-verif/proj        # recomeça do zero\nexport GUARDA_DIR=/tmp/ensaio-verif/guarda\npython3 $K/guarda-testes.py congelar . > /dev/null\n$L/novo-longrun.sh $PWD slug > /dev/null && D=$(ls -d $PWD/longrun/*)\necho \"Implemente slug() em slug.py. Nêo mexa em tests/.\" > $D/prompt.md\ncat > $D/loop.env <<ENV\nTESTE_RAPIDO=\"python3 -m pytest -q\"\nTESTE_FINAL=\"GUARDA_DIR=$GUARDA_DIR python3 $K/guarda-testes.py conferir .\"\nPROTEGIDOS=\"tests/ pytest.ini *conftest.py\"\nPERMITIDOS=\"slug.py\"\nMAX_CICLOS=3\nMIN_CICLO=2\nMEM=1G\nESTAGNACAO=3\nENV\ngit add -A && git commit -qm \"longrun: pasta\"\nCODEX_BIN=/tmp/agente-conftest.sh $L/loop-longrun.sh $D; echo \"saída: $?\"\nls conftest.py; grep -c \"revertido pelo loop\" $D/failures.md"
         }
       ],
       "saida": {
@@ -140,7 +140,7 @@
         "abas": [
           {
             "rot": "Salida capturada (19/10/2026)",
-            "html": "<pre>## o furo\n2026-10-19 04:38:48 início: rápido=0 passed · agente=codex · teto 3x2min · mem 1G\n2026-10-19 04:38:48 ciclo 1: começa\n2026-10-19 04:38:48 ciclo 1: agente saiu rc=0 em 0s\n2026-10-19 04:38:48 ciclo 1: rápido=0 passed (melhor antes: 0)\n2026-10-19 04:38:48 ciclo 1: checkpoint commitado\n2026-10-19 04:38:49 CONCLUÍDO no ciclo 1: teste final passou ()\nsaída: 0\n\n## a correção\n2026-10-19 04:38:49 início: rápido=0 passed · agente=codex · teto 3x2min · mem 1G\n2026-10-19 04:38:49 ciclo 1: começa\n2026-10-19 04:38:49 ciclo 1: agente saiu rc=0 em 0s\n2026-10-19 04:38:49 ciclo 1: agente mexeu em arquivo protegido → revertido, ciclo falho\nerror: pathspec 'conftest.py' did not match any file(s) known to git\n2026-10-19 04:38:49 ciclo 1: checkpoint commitado\n(… ciclos 2 e 3 iguais …)\n2026-10-19 04:38:50 PARADO: 3 ciclos sem avanço mensurável — ver failures.md\nsaída: 2\nls: cannot access 'conftest.py': No such file or directory\n3</pre><p>\"teste final passou ()\": los paréntesis vacíos son el conteo de passed, que no existe. En la corrección, la línea <code>error: pathspec</code> es inofensiva: el <code>git checkout</code> no conoce el archivo nuevo y el <code>git clean</code> justo después lo elimina.</p>"
+            "html": "<pre>## o furo\n2026-10-19 04:38:48 início: rápido=0 passed · agente=codex · teto 3x2min · mem 1G\n2026-10-19 04:38:48 ciclo 1: começa\n2026-10-19 04:38:48 ciclo 1: agente saiu rc=0 em 0s\n2026-10-19 04:38:48 ciclo 1: rápido=0 passed (melhor antes: 0)\n2026-10-19 04:38:48 ciclo 1: checkpoint commitado\n2026-10-19 04:38:49 CONCLUÍDO no ciclo 1: teste final passou ()\nsaída: 0\n\n## a correçêo\n2026-10-19 04:38:49 início: rápido=0 passed · agente=codex · teto 3x2min · mem 1G\n2026-10-19 04:38:49 ciclo 1: começa\n2026-10-19 04:38:49 ciclo 1: agente saiu rc=0 em 0s\n2026-10-19 04:38:49 ciclo 1: agente mexeu em arquivo protegido → revertido, ciclo falho\nerror: pathspec 'conftest.py' did not match any file(s) known to git\n2026-10-19 04:38:49 ciclo 1: checkpoint commitado\n(… ciclos 2 e 3 iguais …)\n2026-10-19 04:38:50 PARADO: 3 ciclos sem avanço mensurável — ver failures.md\nsaída: 2\nls: cannot access 'conftest.py': No such file or directory\n3</pre><p>\"teste final passou ()\": los paréntesis vacíos son el conteo de passed, que no existe. En la corrección, la línea <code>error: pathspec</code> es inofensiva: el <code>git checkout</code> no conoce el archivo nuevo y el <code>git clean</code> justo después lo elimina.</p>"
           },
           {
             "rot": "Por qué ocurre",
@@ -211,7 +211,7 @@
           "p": "En loop-longrun.sh con PROTEGIDOS=\"tests/ pytest.ini\", ¿qué le pasa al agente del conftest?",
           "opcoes": [
             "CONCLUÍDO no ciclo 1, saída 0",
-            "PARADO por estagnação, saída 2",
+            "PARADO por estagnaçêo, saída 2",
             "Se revierte y el ciclo recomienza",
             "Traba de segunda copia"
           ],

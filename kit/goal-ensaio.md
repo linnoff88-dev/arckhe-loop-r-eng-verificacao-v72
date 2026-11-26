@@ -4,11 +4,11 @@
 slug() transforma qualquer título em um endereço de página: minúsculas, sem acento, palavras unidas por hífen.
 
 ## Critérios de pronto
-**Função**
+**Funçêo**
 - [ ] `python3 -m pytest -q tests/` → `3 passed`
-- [ ] `python3 -c "from slug import slug; print(slug('Ação & Reação!'))"` → `acao-reacao`
+- [ ] `python3 -c "from slug import slug; print(slug('Açêo & Reaçêo!'))"` → `acao-reacao`
 
-**Regressão**
+**Regressêo**
 - [ ] `python3 -m pytest -q tests/ -rs` → `código 0`
 
 **Limite**

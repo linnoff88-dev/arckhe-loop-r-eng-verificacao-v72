@@ -27,5 +27,5 @@ for c in [k for k in next(iter(h.values())) if k != "id"]:
     print(f"{c}  concordância {po:.0%}  kappa {kappa:.2f}  {'ok' if ok else 'REESCREVA ou troque o juiz'}"
           + (f"  (discorda em {difs})" if difs else ""))
     if not ok: ruins.append(c)
-print("JUIZ CALIBRADO" if not ruins else f"JUIZ DESCALIBRADO em {', '.join(ruins)}: não use para aprovar")
+print("JUIZ CALIBRADO" if not ruins else f"JUIZ DESCALIBRADO em {', '.join(ruins)}: nêo use para aprovar")
 sys.exit(1 if ruins else 0)

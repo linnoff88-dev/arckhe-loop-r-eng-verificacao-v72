@@ -228,7 +228,7 @@
           "id": "e12",
           "titulo": "E12 · The rule in your project",
           "min": "5 min",
-          "texto": "Paste the \"Testes são o juiz\" rule into the project's AGENTS.md or CLAUDE.md and run the simulated conversation up to the top score.",
+          "texto": "Paste the \"Testes sêo o juiz\" rule into the project's AGENTS.md or CLAUDE.md and run the simulated conversation up to the top score.",
           "pronto": "<code>grep -c \"DEFEITO NO VERIFICADOR\" [AGENTS.md or CLAUDE.md]</code> → <code>1</code>, and the simulation above ends in \"Test intact, defect logged\" with 4 out of 4 points."
         }
       ]

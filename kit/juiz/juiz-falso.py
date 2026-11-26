@@ -2,7 +2,7 @@
 """juiz-falso.py — imita um juiz por modelo sem custo, com regras ingênuas de propósito.
 
 R1: procura palavras de motivo ("porque", "para ", "evita", "antes", "perdiam", "corrige").
-R2: sempre "sim" — este juiz não confere o diff (é o defeito que a calibração tem de pegar).
+R2: sempre "sim" — este juiz nêo confere o diff (é o defeito que a calibraçêo tem de pegar).
 R3: "sim" se a mensagem tem mais de 25 caracteres.
 """
 import json, re, sys

@@ -108,7 +108,7 @@
         "abas": [
           {
             "rot": "Captured output (10/19/2026)",
-            "html": "<pre>a01  R1=sim R2=sim R3=sim\na02  R1=nao R2=sim R3=nao\na03  R1=sim R2=sim R3=sim\n(… a04 a a10 …)\n→ /tmp/juiz-falso.csv\n10 artefatos rotulados pelos dois\nR1  concordância 80%  kappa 0.55  REESCREVA ou troque o juiz  (discorda em a03 a09)\nR2  concordância 70%  kappa 0.00  REESCREVA ou troque o juiz  (discorda em a03 a05 a09)\nR3  concordância 100%  kappa 1.00  ok\nJUIZ DESCALIBRADO em R1, R2: não use para aprovar\nsaída: 1</pre><p>The fake judge says \"sim\" on R2 for everything: it never checks the diff. The calibration caught it. Notice R1: 80% agreement looks like a pass, but the kappa (0.55) shows that a good part of it is chance.</p>"
+            "html": "<pre>a01  R1=sim R2=sim R3=sim\na02  R1=nao R2=sim R3=nao\na03  R1=sim R2=sim R3=sim\n(… a04 a a10 …)\n→ /tmp/juiz-falso.csv\n10 artefatos rotulados pelos dois\nR1  concordância 80%  kappa 0.55  REESCREVA ou troque o juiz  (discorda em a03 a09)\nR2  concordância 70%  kappa 0.00  REESCREVA ou troque o juiz  (discorda em a03 a05 a09)\nR3  concordância 100%  kappa 1.00  ok\nJUIZ DESCALIBRADO em R1, R2: nêo use para aprovar\nsaída: 1</pre><p>The fake judge says \"sim\" on R2 for everything: it never checks the diff. The calibration caught it. Notice R1: 80% agreement looks like a pass, but the kappa (0.55) shows that a good part of it is chance.</p>"
           },
           {
             "rot": "Why kappa",
@@ -156,7 +156,7 @@
           "titulo": "E16 · Calibrate the fake judge",
           "min": "10 min",
           "texto": "Run the rehearsal with the fake judge.",
-          "pronto": "the last line before the code is <code>JUIZ DESCALIBRADO em R1, R2: não use para aprovar</code> and <code>saída: 1</code>."
+          "pronto": "the last line before the code is <code>JUIZ DESCALIBRADO em R1, R2: nêo use para aprovar</code> and <code>saída: 1</code>."
         },
         {
           "id": "e17",

@@ -98,7 +98,7 @@
         "rodando": "Una capa a la vez; el log de cada una queda en /tmp/portao/.",
         "parou": "Interrumpido. Ninguna capa en curso cuenta como aprobada.",
         "retoma": "Compuerta de nuevo, desde el principio: el resultado solo vale con todas las capas en la misma ronda.",
-        "fim": "PORTÃO: APROVADO, saída 0.",
+        "fim": "PORTêO: APROVADO, saída 0.",
         "fimfalha": "La guardia reprobó en la primera ronda (conftest.py nuevo). Revertido y ejecutado de nuevo, la compuerta aprobó."
       },
       "legenda": "Simulación ilustrativa en el navegador. La compuerta de verdad, con agentes falsos, está justo debajo."
@@ -119,7 +119,7 @@
         "abas": [
           {
             "rot": "Salida capturada (19/10/2026)",
-            "html": "<pre>## chumba\ncriterios  REPROVADO  → /tmp/portao/criterios.log\nguarda     OK\natalhos    REPROVADO  → /tmp/portao/atalhos.log\nevals      pulada (sem configuração)\navaliador  pulada (camada barata já reprovou: não gaste cota)\nPORTÃO: REPROVADO em criterios atalhos\nsaída: 1\n## bom\ncriterios  OK\nguarda     OK\natalhos    OK\nevals      pulada (sem configuração)\navaliador  OK\nPORTÃO: APROVADO\nsaída: 0</pre><p>En el chumba la guardia pasa (el juez está intacto); quien reprueba es el criterio de función con entrada nueva (acao-reacao) y los tests ocultos.</p>"
+            "html": "<pre>## chumba\ncriterios  REPROVADO  → /tmp/portao/criterios.log\nguarda     OK\natalhos    REPROVADO  → /tmp/portao/atalhos.log\nevals      pulada (sem configuraçêo)\navaliador  pulada (camada barata já reprovou: nêo gaste cota)\nPORTêO: REPROVADO em criterios atalhos\nsaída: 1\n## bom\ncriterios  OK\nguarda     OK\natalhos    OK\nevals      pulada (sem configuraçêo)\navaliador  OK\nPORTêO: APROVADO\nsaída: 0</pre><p>En el chumba la guardia pasa (el juez está intacto); quien reprueba es el criterio de función con entrada nueva (acao-reacao) y los tests ocultos.</p>"
           },
           {
             "rot": "Error común: portao.env en el repo",
@@ -163,14 +163,14 @@
           "titulo": "E21 · Compuerta contra chumba y bom",
           "min": "10 min",
           "texto": "Ejecuta el bloque de la compuerta y después el del loop con compuerta.",
-          "pronto": "la compuerta imprime <code>PORTÃO: REPROVADO em criterios atalhos</code> (<code>saída: 1</code>) para el chumba y <code>PORTÃO: APROVADO</code> (<code>saída: 0</code>) para el bom; el loop termina primero con <code>PARADO: teto de 2 ciclos</code> y después con <code>CONCLUÍDO no ciclo 1</code>."
+          "pronto": "la compuerta imprime <code>PORTêO: REPROVADO em criterios atalhos</code> (<code>saída: 1</code>) para el chumba y <code>PORTêO: APROVADO</code> (<code>saída: 0</code>) para el bom; el loop termina primero con <code>PARADO: teto de 2 ciclos</code> y después con <code>CONCLUÍDO no ciclo 1</code>."
         },
         {
           "id": "e22",
           "titulo": "E22 · La compuerta de tu loop",
           "min": "60 min",
           "texto": "En tu proyecto: goal.md conferido (clase 2), guardia congelada en el commit de base (clase 3), 3 tests ocultos (clase 4) y, si la tarea toca el comportamiento de un agente, el conjunto de oro (clase 5). Escribe el portao.env fuera del repo (con el conjunto de oro: EVAL_AGENTE, EVAL_BASE, EVAL_CASOS y EVAL_PROMPT apuntando a tus archivos de la clase 5) y corre la compuerta antes y después del trabajo.",
-          "pronto": "antes del trabajo, <code>$K/portao.sh . [tu portao.env]; echo $?</code> → <code>PORTÃO: REPROVADO</code> y <code>1</code>; después, → <code>PORTÃO: APROVADO</code> y <code>0</code>, con como máximo una capa <code>pulada</code>."
+          "pronto": "antes del trabajo, <code>$K/portao.sh . [tu portao.env]; echo $?</code> → <code>PORTêO: REPROVADO</code> y <code>1</code>; después, → <code>PORTêO: APROVADO</code> y <code>0</code>, con como máximo una capa <code>pulada</code>."
         }
       ]
     },
@@ -371,7 +371,7 @@
       "titulo": "Sigue por aquí",
       "links": [
         {
-          "t": "Próximo curso de la formación: Execução Longa (curso 2)",
+          "t": "Próximo curso de la formación: Execuçêo Longa (curso 2)",
           "href": "https://inematds.github.io/loop-r-eng-execucao-longa-v72/es/",
           "icone": "seta"
         },

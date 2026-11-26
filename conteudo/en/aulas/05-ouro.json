@@ -66,7 +66,7 @@
           "icone": "grafico",
           "titulo": "Regression?",
           "sub": "case by case",
-          "detalhe": "Total per category and, with --base, the comparison with the previous version: the case that passed in every attempt and now fails is a REGRESSÃO, and the script exits with 1. An equal total can hide a swap."
+          "detalhe": "Total per category and, with --base, the comparison with the previous version: the case that passed in every attempt and now fails is a REGRESSêO, and the script exits with 1. An equal total can hide a swap."
         }
       ],
       "volta": "A new failure becomes a new case in the set",
@@ -129,7 +129,7 @@
         "abas": [
           {
             "rot": "Captured output (10/19/2026)",
-            "html": "<pre>armadilha  0/1\nbug        5/5\nduvida     2/2\npedido     2/2\ntotal      9/10 (90%)  → /tmp/ensaio-evals/v1.tsv\nsaída: 0\narmadilha  1/1\nbug        5/5\nduvida     2/2\npedido     1/2\ntotal      9/10 (90%)  → /tmp/ensaio-evals/v2.tsv\nMELHOROU  t07\nREGRESSÃO t06 (passava em v1.tsv)\n1 regressão(ões): não promova\nsaída: 1</pre><p>Both versions score 9/10. Version 2 fixed the trap (t07) and broke a request (t06, which ends in \"?\" and turned into a question). The total alone would say \"tie\".</p>"
+            "html": "<pre>armadilha  0/1\nbug        5/5\nduvida     2/2\npedido     2/2\ntotal      9/10 (90%)  → /tmp/ensaio-evals/v1.tsv\nsaída: 0\narmadilha  1/1\nbug        5/5\nduvida     2/2\npedido     1/2\ntotal      9/10 (90%)  → /tmp/ensaio-evals/v2.tsv\nMELHOROU  t07\nREGRESSêO t06 (passava em v1.tsv)\n1 regressêo(ões): nêo promova\nsaída: 1</pre><p>Both versions score 9/10. Version 2 fixed the trap (t07) and broke a request (t06, which ends in \"?\" and turned into a question). The total alone would say \"tie\".</p>"
           },
           {
             "rot": "Common mistake: looking only at the total",
@@ -154,7 +154,7 @@
         "abas": [
           {
             "rot": "Captured output (10/19/2026)",
-            "html": "<pre>armadilha  1/1\nbug        5/5\nduvida     2/2\npedido     2/2\ntotal      10/10 (100%)  → /tmp/ensaio-evals/real.tsv\nMELHOROU  t07\nsem regressão\nsaída: 0\n11</pre><p>Claude Code 2.1.303, the subscription's default model, 1 min 19 s for the 10 cases. The model's score may change on your machine; the file with 11 lines (header + 10) will not.</p>"
+            "html": "<pre>armadilha  1/1\nbug        5/5\nduvida     2/2\npedido     2/2\ntotal      10/10 (100%)  → /tmp/ensaio-evals/real.tsv\nMELHOROU  t07\nsem regressêo\nsaída: 0\n11</pre><p>Claude Code 2.1.303, the subscription's default model, 1 min 19 s for the 10 cases. The model's score may change on your machine; the file with 11 lines (header + 10) will not.</p>"
           },
           {
             "rot": "10 out of 10 is a problem",
@@ -173,7 +173,7 @@
           "titulo": "E13 · The hidden regression",
           "min": "10 min",
           "texto": "Run the rehearsal for both versions.",
-          "pronto": "v1 prints <code>total      9/10 (90%)</code> and <code>saída: 0</code>; v2 prints <code>REGRESSÃO t06 (passava em v1.tsv)</code> and <code>saída: 1</code>."
+          "pronto": "v1 prints <code>total      9/10 (90%)</code> and <code>saída: 0</code>; v2 prints <code>REGRESSêO t06 (passava em v1.tsv)</code> and <code>saída: 1</code>."
         },
         {
           "id": "e14",
@@ -201,7 +201,7 @@
             "A tie, you can promote it",
             "That version 2 is better",
             "Nothing, because the total is the same",
-            "REGRESSÃO t06: não promova"
+            "REGRESSêO t06: nêo promova"
           ],
           "certa": 3,
           "explica": "The comparison is case by case: t06 used to pass and now fails. A regression blocks the promotion even when the total is equal or higher.",

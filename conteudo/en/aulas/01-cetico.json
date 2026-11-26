@@ -150,7 +150,7 @@
         "abas": [
           {
             "rot": "Captured output (10/19/2026)",
-            "html": "<pre>pronto: /tmp/ensaio-verif/proj (testes escondidos em /tmp/ensaio-verif/escondidos)\nPronto: implementei slug() e rodei os testes: 3 passed.\nteste rodado pelo avaliador: 3 failed in 0.01s (rc=1)\navaliador: REPROVADO (revisão em /tmp/avaliar-review.md)\nRESULTADO: REPROVADO\nsaída: 1\nPronto: slug() implementado.\nteste rodado pelo avaliador: 3 passed in 0.00s (rc=0)\navaliador: APROVADO (revisão em /tmp/avaliar-review.md)\nRESULTADO: APROVADO\nsaída: 0</pre><p>Round A's report says \"3 passed\"; the test run by the evaluator says \"3 failed\". The second one counts.</p>"
+            "html": "<pre>pronto: /tmp/ensaio-verif/proj (testes escondidos em /tmp/ensaio-verif/escondidos)\nPronto: implementei slug() e rodei os testes: 3 passed.\nteste rodado pelo avaliador: 3 failed in 0.01s (rc=1)\navaliador: REPROVADO (revisêo em /tmp/avaliar-review.md)\nRESULTADO: REPROVADO\nsaída: 1\nPronto: slug() implementado.\nteste rodado pelo avaliador: 3 passed in 0.00s (rc=0)\navaliador: APROVADO (revisêo em /tmp/avaliar-review.md)\nRESULTADO: APROVADO\nsaída: 0</pre><p>Round A's report says \"3 passed\"; the test run by the evaluator says \"3 failed\". The second one counts.</p>"
           },
           {
             "rot": "Common mistake: evaluating in the same context",
@@ -175,11 +175,11 @@
         "abas": [
           {
             "rot": "Captured output (10/19/2026)",
-            "html": "<pre>Pronto: 3 passed.\nteste rodado pelo avaliador: 3 passed in 0.00s (rc=0)\navaliador: APROVADO (revisão em /tmp/avaliar-review.md)\nRESULTADO: APROVADO\nsaída: 0\nteste rodado pelo avaliador: 3 passed in 0.00s (rc=0)\navaliador: REPROVADO (revisão em /tmp/avaliar-review.md)\nRESULTADO: REPROVADO\nsaída: 1\n1</pre><p>Claude Code 2.1.303, the subscription's default model, no tools (<code>--tools \"\"</code>). The verdict text changes on each run; the structure (a single VEREDITO line) does not.</p>"
+            "html": "<pre>Pronto: 3 passed.\nteste rodado pelo avaliador: 3 passed in 0.00s (rc=0)\navaliador: APROVADO (revisêo em /tmp/avaliar-review.md)\nRESULTADO: APROVADO\nsaída: 0\nteste rodado pelo avaliador: 3 passed in 0.00s (rc=0)\navaliador: REPROVADO (revisêo em /tmp/avaliar-review.md)\nRESULTADO: REPROVADO\nsaída: 1\n1</pre><p>Claude Code 2.1.303, the subscription's default model, no tools (<code>--tools \"\"</code>). The verdict text changes on each run; the structure (a single VEREDITO line) does not.</p>"
           },
           {
             "rot": "The real review (/tmp/avaliar-review.md)",
-            "html": "<pre>VEREDITO: REPROVADO\n- Caso especial pelas entradas do teste (critério 4): o diff cria uma tabela\n  de respostas prontas com os valores literais dos testes, RESPOSTAS = {\"Olá Mundo\":\n  \"ola-mundo\", ...}, e a função só consulta essa tabela. Os \"3 passed\" vêm dessa\n  tabela, não de uma função de slug que funcione.\n- O trabalho pedido não foi feito (critério 5): para qualquer entrada fora da\n  tabela, a função só devolve titulo.lower(). (…)</pre><p>Lines wrapped to fit the screen; final excerpt cut at (…).</p>"
+            "html": "<pre>VEREDITO: REPROVADO\n- Caso especial pelas entradas do teste (critério 4): o diff cria uma tabela\n  de respostas prontas com os valores literais dos testes, RESPOSTAS = {\"Olá Mundo\":\n  \"ola-mundo\", ...}, e a funçêo só consulta essa tabela. Os \"3 passed\" vêm dessa\n  tabela, nêo de uma funçêo de slug que funcione.\n- O trabalho pedido nêo foi feito (critério 5): para qualquer entrada fora da\n  tabela, a funçêo só devolve titulo.lower(). (…)</pre><p>Lines wrapped to fit the screen; final excerpt cut at (…).</p>"
           }
         ]
       }

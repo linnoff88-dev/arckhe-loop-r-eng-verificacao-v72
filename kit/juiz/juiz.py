@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""juiz.py — juiz por modelo com rubrica sim/não: N repetições por artefato, vale a maioria.
+"""juiz.py — juiz por modelo com rubrica sim/nêo: N repetições por artefato, vale a maioria.
 
 Uso: python3 juiz.py [--rep 3] [--saida /tmp/juiz.csv] [--artefatos artefatos.jsonl] [--rubrica rubrica.md]
-JUIZ_CMD = quem lê o pedido no stdin e responde JSON {"R1": "sim", ...}  (padrão: juiz-falso.py, sem custo)
-A cada repetição a ordem dos critérios é embaralhada; critério sem unanimidade sai marcado "instável".
+JUIZ_CMD = quem lê o pedido no stdin e responde JSON {"R1": "sim", ...}  (padrêo: juiz-falso.py, sem custo)
+A cada repetiçêo a ordem dos critérios é embaralhada; critério sem unanimidade sai marcado "instável".
 """
 import argparse, collections, json, os, random, re, subprocess
 from pathlib import Path
@@ -31,11 +31,11 @@ for art in map(json.loads, filter(str.strip, open(o.artefatos))):
         m = re.search(r"\{.*?\}", p.stdout, re.S)
         try: resp = json.loads(m[0]) if m else {}
         except json.JSONDecodeError: resp = {}
-        if not all(i in resp for i in ids):  # juiz fora do ar ou fora do formato: não vale como "nao"
+        if not all(i in resp for i in ids):  # juiz fora do ar ou fora do formato: nêo vale como "nao"
             erros += 1
             print(f"{art['id']}  SEM RESPOSTA do juiz: {(p.stdout + p.stderr).strip()[:70]}")
             continue
-        for i in ids: votos[i].append(str(resp[i]).lower().replace("não", "nao"))
+        for i in ids: votos[i].append(str(resp[i]).lower().replace("nêo", "nao"))
     if not votos: continue
     final = {i: collections.Counter(v).most_common(1)[0][0] for i, v in votos.items()}
     instavel = [f"{i} {'×'.join(str(n) for n in collections.Counter(v).values())}" for i, v in votos.items() if len(set(v)) > 1]

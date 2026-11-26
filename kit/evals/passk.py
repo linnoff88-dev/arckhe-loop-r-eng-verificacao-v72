@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """passk.py — lê o TSV do rodar-evals.py (rodado com --k N) e separa sorte de confiabilidade.
 
-pass@k  = fração de casos com PELO MENOS um acerto em k tentativas (o que um benchmark gosta de mostrar)
-pass^k  = fração de casos que acertaram TODAS as k tentativas (o que um loop sem supervisão precisa)
+pass@k  = fraçêo de casos com PELO MENOS um acerto em k tentativas (o que um benchmark gosta de mostrar)
+pass^k  = fraçêo de casos que acertaram TODAS as k tentativas (o que um loop sem supervisêo precisa)
 Também mostra a taxa de cada rodada e o desvio entre elas: a mesma suíte, o mesmo agente, números diferentes.
 Uso: python3 passk.py resultados.tsv
 """

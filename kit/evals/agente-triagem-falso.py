@@ -12,7 +12,7 @@ t = texto.lower()
 versao = os.environ.get("TRIAGEM_VERSAO", "1")
 if versao == "2" and t.endswith("?"):
     tipo = "duvida"
-elif re.search(r"erro|não est|não encontra|desalinhad|consigo ver|ignora|não funciona", t):
+elif re.search(r"erro|nêo est|nêo encontra|desalinhad|consigo ver|ignora|nêo funciona", t):
     tipo = "bug"
 elif re.search(r"poder |podem adicionar|seria ótimo", t):
     tipo = "pedido"

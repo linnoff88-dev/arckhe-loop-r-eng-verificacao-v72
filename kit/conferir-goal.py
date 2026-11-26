@@ -3,7 +3,7 @@
 
 Lê as linhas  - [ ] `comando` → `esperado`  (ou - [x]). O esperado pode ser:
   um trecho literal (palavra inteira na saída)  ·  vazio (saída vazia)  ·  código N (código de saída)
-Critério sem comando entre crases não dá para conferir: conta como FALHOU.
+Critério sem comando entre crases nêo dá para conferir: conta como FALHOU.
 Uso: python3 conferir-goal.py goal.md [--pasta DIR]   Sai com 0 só se tudo passar.
 """
 import re, subprocess, sys

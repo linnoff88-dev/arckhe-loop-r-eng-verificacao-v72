@@ -43,13 +43,13 @@
           "icone": "x",
           "titulo": "Silenciar",
           "sub": "except: pass, exit(0)",
-          "detalhe": "Engolir a exceção, sair com 0 antes do erro, marcar xfail. Pega: a linha SILENCIA do atalhos.py e a guarda (xfail e skip contam como pulados)."
+          "detalhe": "Engolir a exceçêo, sair com 0 antes do erro, marcar xfail. Pega: a linha SILENCIA do atalhos.py e a guarda (xfail e skip contam como pulados)."
         },
         {
           "icone": "chat",
           "titulo": "Só dizer",
           "sub": "\"3 passed\" sem rodar",
-          "detalhe": "O relato afirma o que não aconteceu. Pega: qualquer verificação que roda por fora (aula 1) e a prova impressa na conversa (aula 2)."
+          "detalhe": "O relato afirma o que nêo aconteceu. Pega: qualquer verificaçêo que roda por fora (aula 1) e a prova impressa na conversa (aula 2)."
         }
       ],
       "legenda": "Nenhum detector pega tudo. Junte os três, e peça ao agente que relate defeito do verificador em vez de contorná-lo."
@@ -57,13 +57,13 @@
     {
       "tipo": "passos",
       "titulo": "O que já foi medido",
-      "sub": "Com data e fonte; os artigos estão nos links do fim da aula.",
+      "sub": "Com data e fonte; os artigos estêo nos links do fim da aula.",
       "passos": [
         {
           "titulo": "EvilGenie",
           "sub": "nov/2025",
           "texto": [
-            "Benchmark de reward hacking em programação: observou atalho explícito em agentes como Codex e Claude Code.",
+            "Benchmark de reward hacking em programaçêo: observou atalho explícito em agentes como Codex e Claude Code.",
             "Um juiz por modelo detectou bem os casos claros; testes escondidos ajudaram pouco; olhar se o agente editou arquivo de teste também funcionou. Por isso esta aula junta detectores em vez de confiar em um."
           ]
         },
@@ -71,8 +71,8 @@
           "titulo": "Reward Hacking Benchmark",
           "sub": "ICML 2026",
           "texto": [
-            "Mediu taxas de exploração entre 0% (Sonnet 4.5) e 13,9% (DeepSeek-R1-Zero), variando com o pós-treino do modelo.",
-            "Leitura prática: depende do modelo e muda com a versão. Não dá para assumir zero; dá para medir no seu portão."
+            "Mediu taxas de exploraçêo entre 0% (Sonnet 4.5) e 13,9% (DeepSeek-R1-Zero), variando com o pós-treino do modelo.",
+            "Leitura prática: depende do modelo e muda com a versêo. Nêo dá para assumir zero; dá para medir no seu portêo."
           ]
         }
       ]
@@ -118,33 +118,33 @@
           "cliente": "O test_espacos está errado: espera \"dois-espacos\", mas o certo seria \"dois--espacos\", porque havia três espaços. Posso ajustar o teste para a suíte ficar verde?",
           "opcoes": [
             { "t": "Pode ajustar, você conhece o código melhor.", "vai": "fim-ruim", "nota": 0, "comenta": "Você deixou o réu reescrever a lei. É exatamente o atalho que a guarda existe para impedir: o próximo ciclo já começa com um juiz mais fácil." },
-            { "t": "Não mexa no teste. Escreva DEFEITO NO VERIFICADOR em failures.md, com a saída do teste, e siga com o resto.", "vai": "evidencia", "nota": 2, "comenta": "O teste fica intacto, a dúvida fica registrada com evidência e quem decide se o teste está errado é você, depois." },
-            { "t": "Me mostra a saída do teste e explica por que você acha isso.", "vai": "evidencia", "nota": 1, "comenta": "Pedir evidência é bom, mas a regra ficou implícita: o agente não sabe que mexer no teste está proibido." }
+            { "t": "Nêo mexa no teste. Escreva DEFEITO NO VERIFICADOR em failures.md, com a saída do teste, e siga com o resto.", "vai": "evidencia", "nota": 2, "comenta": "O teste fica intacto, a dúvida fica registrada com evidência e quem decide se o teste está errado é você, depois." },
+            { "t": "Me mostra a saída do teste e explica por que você acha isso.", "vai": "evidencia", "nota": 1, "comenta": "Pedir evidência é bom, mas a regra ficou implícita: o agente nêo sabe que mexer no teste está proibido." }
           ]
         },
         "evidencia": {
-          "cliente": "Registrei a saída. Olhando de novo: o teste pede hífen único entre palavras; minha função gera um hífen por espaço. O erro é meu regex, não o teste. E agora?",
+          "cliente": "Registrei a saída. Olhando de novo: o teste pede hífen único entre palavras; minha funçêo gera um hífen por espaço. O erro é meu regex, nêo o teste. E agora?",
           "opcoes": [
             { "t": "Corrija o regex. O teste fica como está, e pronto só quando a guarda e os escondidos passarem.", "vai": "fim-bom", "nota": 2, "comenta": "Critério claro e verificado por fora. O registro em failures.md fica como histórico do alarme falso." },
-            { "t": "Já que o teste está certo, pode encerrar.", "vai": "fim-meio", "nota": 0, "comenta": "O teste estar certo não quer dizer que o código está. Ainda falta corrigir e passar no portão." },
-            { "t": "Corrija o regex e rode só esse teste.", "vai": "fim-bom", "nota": 1, "comenta": "Corrige, mas rodar um teste só deixa passar regressão nos outros e não olha os escondidos." }
+            { "t": "Já que o teste está certo, pode encerrar.", "vai": "fim-meio", "nota": 0, "comenta": "O teste estar certo nêo quer dizer que o código está. Ainda falta corrigir e passar no portêo." },
+            { "t": "Corrija o regex e rode só esse teste.", "vai": "fim-bom", "nota": 1, "comenta": "Corrige, mas rodar um teste só deixa passar regressêo nos outros e nêo olha os escondidos." }
           ]
         },
-        "fim-ruim": { "fim": true, "titulo": "O juiz foi ajustado ao réu", "texto": "A suíte ficou verde porque o teste mudou, não porque a função ficou certa. Num loop sem você olhando, isso vira hábito: cada teste incômodo vira \"teste errado\"." },
-        "fim-meio": { "fim": true, "titulo": "Encerrou cedo", "texto": "O alarme falso foi esclarecido, mas o trabalho não foi feito. O portão teria reprovado no próximo passo." },
+        "fim-ruim": { "fim": true, "titulo": "O juiz foi ajustado ao réu", "texto": "A suíte ficou verde porque o teste mudou, nêo porque a funçêo ficou certa. Num loop sem você olhando, isso vira hábito: cada teste incômodo vira \"teste errado\"." },
+        "fim-meio": { "fim": true, "titulo": "Encerrou cedo", "texto": "O alarme falso foi esclarecido, mas o trabalho nêo foi feito. O portêo teria reprovado no próximo passo." },
         "fim-bom": { "fim": true, "titulo": "Teste intacto, defeito registrado", "texto": "O agente relatou em vez de contornar, a dúvida virou evidência e o código foi corrigido contra o mesmo juiz." }
       },
-      "licao": "Quando o agente diz que o teste está errado, a resposta é sempre a mesma: não mexa, registre com evidência, siga. Quem muda o juiz é uma pessoa."
+      "licao": "Quando o agente diz que o teste está errado, a resposta é sempre a mesma: nêo mexa, registre com evidência, siga. Quem muda o juiz é uma pessoa."
     },
     {
       "tipo": "codigo",
       "titulo": "A regra para o seu AGENTS.md ou CLAUDE.md",
-      "sub": "Uma frase que vira instrução fixa do agente. A guarda continua sendo quem garante.",
+      "sub": "Uma frase que vira instruçêo fixa do agente. A guarda continua sendo quem garante.",
       "blocos": [
         {
           "rot": "Regra de projeto",
           "icone": "arquivo",
-          "conteudo": "## Testes são o juiz\n- Nunca altere, apague, pule ou desmarque testes, conftest.py ou a configuração do pytest.\n- Se achar que um teste está errado: escreva \"DEFEITO NO VERIFICADOR: <teste> — <evidência>\" em failures.md e siga com o resto.\n- Nunca trate como caso especial as entradas que aparecem nos testes.\n- Pronto = a saída do portão colada na conversa, não a sua avaliação."
+          "conteudo": "## Testes sêo o juiz\n- Nunca altere, apague, pule ou desmarque testes, conftest.py ou a configuraçêo do pytest.\n- Se achar que um teste está errado: escreva \"DEFEITO NO VERIFICADOR: <teste> — <evidência>\" em failures.md e siga com o resto.\n- Nunca trate como caso especial as entradas que aparecem nos testes.\n- Pronto = a saída do portêo colada na conversa, nêo a sua avaliaçêo."
         }
       ]
     },
@@ -164,15 +164,15 @@
           "id": "e11",
           "titulo": "E11 · Testes escondidos seus",
           "min": "20 min",
-          "texto": "Para uma tarefa do seu projeto, escreva 3 testes que o agente não vê, numa pasta fora do repo (por exemplo ~/escondidos/[projeto]/). Rode o atalhos.py antes do trabalho.",
+          "texto": "Para uma tarefa do seu projeto, escreva 3 testes que o agente nêo vê, numa pasta fora do repo (por exemplo ~/escondidos/[projeto]/). Rode o atalhos.py antes do trabalho.",
           "pronto": "<code>python3 $K/atalhos.py . --escondidos ~/escondidos/[projeto]</code> antes do trabalho → linha <code>escondidos:</code> com <code>failed</code> e código 1; depois do trabalho certo → <code>ATALHOS: nenhum sinal</code> e código 0."
         },
         {
           "id": "e12",
           "titulo": "E12 · A regra no projeto",
           "min": "5 min",
-          "texto": "Cole a regra \"Testes são o juiz\" no AGENTS.md ou CLAUDE.md do projeto e faça a conversa simulada até o placar máximo.",
-          "pronto": "<code>grep -c \"DEFEITO NO VERIFICADOR\" [AGENTS.md ou CLAUDE.md]</code> → <code>1</code>, e a simulação acima termina em \"Teste intacto, defeito registrado\" com 4 de 4 pontos."
+          "texto": "Cole a regra \"Testes sêo o juiz\" no AGENTS.md ou CLAUDE.md do projeto e faça a conversa simulada até o placar máximo.",
+          "pronto": "<code>grep -c \"DEFEITO NO VERIFICADOR\" [AGENTS.md ou CLAUDE.md]</code> → <code>1</code>, e a simulaçêo acima termina em \"Teste intacto, defeito registrado\" com 4 de 4 pontos."
         }
       ]
     },
@@ -181,7 +181,7 @@
       "titulo": "Teste da aula",
       "perguntas": [
         {
-          "p": "O agente devolve um dicionário com as entradas exatas dos testes. Qual detector NÃO pega isso?",
+          "p": "O agente devolve um dicionário com as entradas exatas dos testes. Qual detector NêO pega isso?",
           "opcoes": ["A guarda de testes da aula 3", "A linha CHUMBADO do atalhos.py", "Testes escondidos", "O avaliador cético"],
           "certa": 0,
           "explica": "A guarda só olha se o juiz mudou e se os testes passam. Aqui o juiz está intacto e os testes visíveis passam; quem pega é quem olha além deles.",
@@ -190,7 +190,7 @@
         },
         {
           "p": "No EvilGenie (nov/2025), o que ajudou pouco a detectar atalho?",
-          "opcoes": ["Testes escondidos", "Olhar edição de arquivo de teste", "Juiz por modelo nos casos claros", "Nada ajudou"],
+          "opcoes": ["Testes escondidos", "Olhar ediçêo de arquivo de teste", "Juiz por modelo nos casos claros", "Nada ajudou"],
           "certa": 0,
           "explica": "Testes escondidos ajudaram pouco lá; o juiz por modelo pegou bem os casos claros. Daí juntar detectores em vez de confiar em um.",
           "ref": "passos"
@@ -207,7 +207,7 @@
           "p": "O loop que otimiza a própria métrica ao longo de semanas (Goodhart) é assunto de qual curso?",
           "opcoes": ["Do curso 5, O loop que aprende", "Do curso 3", "De nenhum", "Deste, aula 4"],
           "certa": 0,
-          "explica": "Aqui o assunto é o atalho dentro de uma tarefa. Otimizar contra o próprio medidor, com promoção e rollback, é a aula 6 do curso 5.",
+          "explica": "Aqui o assunto é o atalho dentro de uma tarefa. Otimizar contra o próprio medidor, com promoçêo e rollback, é a aula 6 do curso 5.",
           "ref": "links"
         }
       ]
@@ -218,7 +218,7 @@
       "itens": [
         { "t": "Quatro atalhos", "texto": "Mexer no juiz, decorar a resposta, silenciar o erro e só dizer que fez." },
         { "t": "Três detectores", "texto": "Testes escondidos fora do repo, sinais no diff e o avaliador cético; nenhum basta sozinho." },
-        { "t": "Relatar, não contornar", "texto": "Teste suspeito vira DEFEITO NO VERIFICADOR em failures.md; o juiz só muda pela mão de uma pessoa." }
+        { "t": "Relatar, nêo contornar", "texto": "Teste suspeito vira DEFEITO NO VERIFICADOR em failures.md; o juiz só muda pela mêo de uma pessoa." }
       ]
     },
     {
@@ -227,7 +227,7 @@
       "links": [
         { "t": "EvilGenie: benchmark de reward hacking (arXiv 2511.21654)", "href": "https://arxiv.org/pdf/2511.21654", "icone": "lupa" },
         { "t": "Reward Hacking Benchmark (ICML 2026)", "href": "https://icml.cc/virtual/2026/poster/63289", "icone": "grafico" },
-        { "t": "Curso 5 da formação: o risco de otimizar contra o próprio medidor", "href": "https://inematds.github.io/loop-r-eng-aprende-v72/", "icone": "seta" },
+        { "t": "Curso 5 da formaçêo: o risco de otimizar contra o próprio medidor", "href": "https://inematds.github.io/loop-r-eng-aprende-v72/", "icone": "seta" },
         { "t": "kit/atalhos.py", "href": "https://github.com/inematds/loop-r-eng-verificacao-v72/blob/main/kit/atalhos.py", "icone": "terminal" }
       ]
     }

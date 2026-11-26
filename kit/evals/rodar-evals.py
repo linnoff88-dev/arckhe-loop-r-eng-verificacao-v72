@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""rodar-evals.py — roda o conjunto de ouro contra um agente e compara com a versão anterior.
+"""rodar-evals.py — roda o conjunto de ouro contra um agente e compara com a versêo anterior.
 
-Cada caso: prompt + "## ISSUE" + entrada vão pelo stdin do AGENTE; a 1ª linha de JSON da resposta é
+Cada caso: prompt + "## ISSUE" + entrada vêo pelo stdin do AGENTE; a 1ª linha de JSON da resposta é
 conferida por código (campo a campo com "espera"). Grava um TSV: id, categoria, tentativa, ok, veio.
 Uso: python3 rodar-evals.py --agente "CMD" --saida v2.tsv [--casos casos.jsonl] [--prompt prompt-triagem.md]
                             [--base v1.tsv] [--k 3]
-Sai 1 se algum caso que passava em TODAS as tentativas da base agora falha (regressão).
+Sai 1 se algum caso que passava em TODAS as tentativas da base agora falha (regressêo).
 """
 import argparse, collections, json, os, re, subprocess
 from pathlib import Path
@@ -41,6 +41,6 @@ def sempre_ok(arq):
 antes, agora = sempre_ok(o.base), sempre_ok(o.saida)
 regressoes = sorted(antes - agora)
 for i in sorted(agora - antes): print(f"MELHOROU  {i}")
-for i in regressoes: print(f"REGRESSÃO {i} (passava em {Path(o.base).name})")
-print("sem regressão" if not regressoes else f"{len(regressoes)} regressão(ões): não promova")
+for i in regressoes: print(f"REGRESSêO {i} (passava em {Path(o.base).name})")
+print("sem regressêo" if not regressoes else f"{len(regressoes)} regressêo(ões): nêo promova")
 raise SystemExit(1 if regressoes else 0)
