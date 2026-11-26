@@ -196,8 +196,8 @@
       "tipo": "links",
       "titulo": "Para ir além",
       "links": [
-        { "t": "Curso 2, aula 6: o loop headless por dentro (loop-longrun.sh)", "href": "https://inematds.github.io/loop-r-eng-execucao-longa-v72/aulas/headless/", "icone": "robo" },
-        { "t": "kit/guarda-testes.py", "href": "https://github.com/inematds/loop-r-eng-verificacao-v72/blob/main/kit/guarda-testes.py", "icone": "cadeado" },
+        { "t": "Curso 2, aula 6: o loop headless por dentro (loop-longrun.sh)", "href": "https://linnoff88-dev.github.io/arckhe-/aulas/headless/", "icone": "robo" },
+        { "t": "kit/guarda-testes.py", "href": "https://github.com/linnoff88-dev/loop-r-eng-verificacao-v72/blob/main/kit/guarda-testes.py", "icone": "cadeado" },
         { "t": "Anthropic: harnesses eficazes para agentes de longa duraçêo (26/11/2025)", "href": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents", "icone": "lupa" }
       ]
     }

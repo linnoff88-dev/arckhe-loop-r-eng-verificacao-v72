@@ -257,12 +257,12 @@
       "links": [
         {
           "t": "Course 2, lesson 6: the headless loop from the inside (loop-longrun.sh)",
-          "href": "https://inematds.github.io/loop-r-eng-execucao-longa-v72/en/aulas/headless/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/en/aulas/headless/",
           "icone": "robo"
         },
         {
           "t": "kit/guarda-testes.py",
-          "href": "https://github.com/inematds/loop-r-eng-verificacao-v72/blob/main/kit/guarda-testes.py",
+          "href": "https://github.com/linnoff88-dev/loop-r-eng-verificacao-v72/blob/main/kit/guarda-testes.py",
           "icone": "cadeado"
         },
         {

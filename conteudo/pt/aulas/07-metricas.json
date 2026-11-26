@@ -211,7 +211,7 @@
         { "t": "Anthropic: Demystifying evals for AI agents (09/01/2026)", "href": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents", "icone": "lupa" },
         { "t": "METR: notas (passa no SWE-bench × seria aceito)", "href": "https://metr.org/notes/", "icone": "arquivo" },
         { "t": "METR: horizontes de tempo", "href": "https://metr.org/time-horizons/", "icone": "relogio" },
-        { "t": "kit/evals/passk.py", "href": "https://github.com/inematds/loop-r-eng-verificacao-v72/blob/main/kit/evals/passk.py", "icone": "terminal" }
+        { "t": "kit/evals/passk.py", "href": "https://github.com/linnoff88-dev/loop-r-eng-verificacao-v72/blob/main/kit/evals/passk.py", "icone": "terminal" }
       ]
     }
   ]

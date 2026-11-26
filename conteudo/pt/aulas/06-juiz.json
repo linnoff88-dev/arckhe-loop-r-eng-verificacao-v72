@@ -202,10 +202,10 @@
       "tipo": "links",
       "titulo": "Para ir além",
       "links": [
-        { "t": "LOOP-R: o juiz e como impedir que ele derive (docs/05, §5)", "href": "https://github.com/inematds/loop-r/blob/main/docs/05-medicao-evals-guardrails.md", "icone": "arquivo" },
-        { "t": "LOOP-R: templates/rubrica.md", "href": "https://github.com/inematds/loop-r/blob/main/templates/rubrica.md", "icone": "lista" },
+        { "t": "LOOP-R: o juiz e como impedir que ele derive (docs/05, §5)", "href": "https://github.com/linnoff88-dev/loop-r/blob/main/docs/05-medicao-evals-guardrails.md", "icone": "arquivo" },
+        { "t": "LOOP-R: templates/rubrica.md", "href": "https://github.com/linnoff88-dev/loop-r/blob/main/templates/rubrica.md", "icone": "lista" },
         { "t": "Anthropic: Demystifying evals for AI agents (09/01/2026)", "href": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents", "icone": "lupa" },
-        { "t": "kit/juiz/ (rubrica, juiz, calibraçêo)", "href": "https://github.com/inematds/loop-r-eng-verificacao-v72/tree/main/kit/juiz", "icone": "terminal" }
+        { "t": "kit/juiz/ (rubrica, juiz, calibraçêo)", "href": "https://github.com/linnoff88-dev/loop-r-eng-verificacao-v72/tree/main/kit/juiz", "icone": "terminal" }
       ]
     }
   ]

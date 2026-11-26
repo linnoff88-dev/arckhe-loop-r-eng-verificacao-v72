@@ -185,9 +185,9 @@
       "titulo": "Para ir além",
       "links": [
         { "t": "Claude Code: /goal (documentaçêo oficial)", "href": "https://code.claude.com/docs/en/goal", "icone": "lupa" },
-        { "t": "Curso 2, aula 2: escrever o goal.md nível 3+", "href": "https://inematds.github.io/loop-r-eng-execucao-longa-v72/aulas/goal/", "icone": "arquivo" },
-        { "t": "Curso 0 da formaçêo: a escala de critério de pronto (0 a 4)", "href": "https://inematds.github.io/loop-r-eng-base-v72/", "icone": "camadas" },
-        { "t": "kit/conferir-goal.py", "href": "https://github.com/inematds/loop-r-eng-verificacao-v72/blob/main/kit/conferir-goal.py", "icone": "terminal" }
+        { "t": "Curso 2, aula 2: escrever o goal.md nível 3+", "href": "https://linnoff88-dev.github.io/arckhe-/aulas/goal/", "icone": "arquivo" },
+        { "t": "Curso 0 da formaçêo: a escala de critério de pronto (0 a 4)", "href": "https://linnoff88-dev.github.io/arckhe-/", "icone": "camadas" },
+        { "t": "kit/conferir-goal.py", "href": "https://github.com/linnoff88-dev/loop-r-eng-verificacao-v72/blob/main/kit/conferir-goal.py", "icone": "terminal" }
       ]
     }
   ]

@@ -1,21 +1,21 @@
 {
   "id": "loop-r-eng-verificacao-v72",
   "lang": "en",
-  "url": "https://inematds.github.io/loop-r-eng-verificacao-v72/en/",
+  "url": "https://linnoff88-dev.github.io/arckhe-/en/",
   "nome": "Verification and Evals",
   "sub": "LOOP-R Engineering Track · course 1",
   "volta": {
     "t": "LOOP-R Engineering area",
-    "href": "https://eventos.inema.pro/loop-r-engenharia/"
+    "href": "https://eventos.ARCKHÉ.pro/loop-r-engenharia/"
   },
   "lado_card": {
     "rot": "This course's kit",
     "t": "kit/ in the course repository",
     "texto": "Evaluator, criteria check, test guard, shortcut detector, evals, judge, and gate. Each one with a rehearsal at no cost, tested on 10/19/2026.",
     "link": "Open the kit/ folder on GitHub",
-    "href": "https://github.com/inematds/loop-r-eng-verificacao-v72/tree/main/kit"
+    "href": "https://github.com/linnoff88-dev/loop-r-eng-verificacao-v72/tree/main/kit"
   },
-  "rodape": "INEMA.CLUB · open and free content · INEMA Learning v7.2 format · LOOP-R Engineering Track, course 1 of 6 · <a href=\"https://eventos.inema.pro/loop-r-engenharia/\">eventos.inema.pro/loop-r-engenharia</a> · <a href=\"https://github.com/inematds/loop-r-eng-verificacao-v72/tree/main/kit\">course kit on GitHub</a> · <a href=\"https://inema.club/\">inema.club</a>",
+  "rodape": "ARCKHÉ AI · open and free content · ARCKHÉ Learning v7.2 format · LOOP-R Engineering Track, course 1 of 6 · <a href=\"https://eventos.ARCKHÉ.pro/loop-r-engenharia/\">eventos.ARCKHÉ.pro/loop-r-engenharia</a> · <a href=\"https://github.com/linnoff88-dev/loop-r-eng-verificacao-v72/tree/main/kit\">course kit on GitHub</a> · <a href=\"https://ARCKHÉ AI/\">ARCKHÉ AI</a>",
   "videos": {},
   "inicio": {
     "kicker": "LOOP-R Engineering Track · course 1 of 6 · 8 lessons",
@@ -24,7 +24,7 @@
     "cta": "Start with lesson 1",
     "cta2": {
       "t": "See the track area",
-      "href": "https://eventos.inema.pro/loop-r-engenharia/"
+      "href": "https://eventos.ARCKHÉ.pro/loop-r-engenharia/"
     },
     "capa_alt": "Night inspection bench with an articulated magnifier over a board, an oscilloscope, and a terminal in the background.",
     "numeros": [

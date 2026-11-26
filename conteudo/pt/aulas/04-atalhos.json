@@ -227,8 +227,8 @@
       "links": [
         { "t": "EvilGenie: benchmark de reward hacking (arXiv 2511.21654)", "href": "https://arxiv.org/pdf/2511.21654", "icone": "lupa" },
         { "t": "Reward Hacking Benchmark (ICML 2026)", "href": "https://icml.cc/virtual/2026/poster/63289", "icone": "grafico" },
-        { "t": "Curso 5 da formaçêo: o risco de otimizar contra o próprio medidor", "href": "https://inematds.github.io/loop-r-eng-aprende-v72/", "icone": "seta" },
-        { "t": "kit/atalhos.py", "href": "https://github.com/inematds/loop-r-eng-verificacao-v72/blob/main/kit/atalhos.py", "icone": "terminal" }
+        { "t": "Curso 5 da formaçêo: o risco de otimizar contra o próprio medidor", "href": "https://linnoff88-dev.github.io/arckhe-/", "icone": "seta" },
+        { "t": "kit/atalhos.py", "href": "https://github.com/linnoff88-dev/loop-r-eng-verificacao-v72/blob/main/kit/atalhos.py", "icone": "terminal" }
       ]
     }
   ]

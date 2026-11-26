@@ -88,7 +88,7 @@
         },
         {
           "titulo": "Concordar nêo é provar",
-          "sub": "curso Dev com IA, INEMA",
+          "sub": "curso Dev com IA, ARCKHÉ",
           "texto": [
             "Dois modelos concordando que \"está certo\" é uma opiniêo repetida. O que fecha o ciclo é teste, critério de aceite e aceite humano.",
             "Por isso o avaliar.sh roda o teste antes de consultar qualquer modelo, e o teste tem a palavra final."
@@ -104,7 +104,7 @@
         {
           "rot": "Terminal · pegar o kit",
           "icone": "terminal",
-          "conteudo": "git clone https://github.com/inematds/loop-r-eng-verificacao-v72 ~/projetos/loop-r-eng-verificacao-v72\nls ~/projetos/loop-r-eng-verificacao-v72/kit"
+          "conteudo": "git clone https://github.com/linnoff88-dev/loop-r-eng-verificacao-v72 ~/projetos/loop-r-eng-verificacao-v72\nls ~/projetos/loop-r-eng-verificacao-v72/kit"
         },
         {
           "rot": "kit/prompt-avaliador.md",
@@ -241,8 +241,8 @@
       "titulo": "Para ir além",
       "links": [
         { "t": "Anthropic: harness design para apps de longa duraçêo (24/03/2026)", "href": "https://anthropic.com/engineering/harness-design-long-running-apps", "icone": "lupa" },
-        { "t": "kit/avaliar.sh e kit/prompt-avaliador.md", "href": "https://github.com/inematds/loop-r-eng-verificacao-v72/tree/main/kit", "icone": "terminal" },
-        { "t": "Curso 3 da formaçêo: gerador × avaliador num time de agentes", "href": "https://inematds.github.io/loop-r-eng-multiagente-v72/", "icone": "robo" }
+        { "t": "kit/avaliar.sh e kit/prompt-avaliador.md", "href": "https://github.com/linnoff88-dev/loop-r-eng-verificacao-v72/tree/main/kit", "icone": "terminal" },
+        { "t": "Curso 3 da formaçêo: gerador × avaliador num time de agentes", "href": "https://linnoff88-dev.github.io/arckhe-/", "icone": "robo" }
       ]
     }
   ]

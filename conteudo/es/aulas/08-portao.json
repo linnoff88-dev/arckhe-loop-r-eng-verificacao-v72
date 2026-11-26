@@ -372,22 +372,22 @@
       "links": [
         {
           "t": "Próximo curso de la formación: Execuçêo Longa (curso 2)",
-          "href": "https://inematds.github.io/loop-r-eng-execucao-longa-v72/es/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/es/",
           "icone": "seta"
         },
         {
           "t": "Área LOOP-R Ingeniería",
-          "href": "https://eventos.inema.pro/loop-r-engenharia/",
+          "href": "https://eventos.ARCKHÉ.pro/loop-r-engenharia/",
           "icone": "camadas"
         },
         {
           "t": "kit/portao.sh",
-          "href": "https://github.com/inematds/loop-r-eng-verificacao-v72/blob/main/kit/portao.sh",
+          "href": "https://github.com/linnoff88-dev/loop-r-eng-verificacao-v72/blob/main/kit/portao.sh",
           "icone": "terminal"
         },
         {
           "t": "Curso 4 de la formación: seguridad del loop autónomo (hooks de guardia)",
-          "href": "https://inematds.github.io/loop-r-eng-seguranca-v72/es/",
+          "href": "https://linnoff88-dev.github.io/arckhe-/es/",
           "icone": "escudo"
         }
       ]

@@ -1,21 +1,21 @@
 {
   "id": "loop-r-eng-verificacao-v72",
   "lang": "es",
-  "url": "https://inematds.github.io/loop-r-eng-verificacao-v72/es/",
+  "url": "https://linnoff88-dev.github.io/arckhe-/es/",
   "nome": "Verificación y Evals",
   "sub": "Formación LOOP-R Ingeniería · curso 1",
   "volta": {
     "t": "Área LOOP-R Ingeniería",
-    "href": "https://eventos.inema.pro/loop-r-engenharia/"
+    "href": "https://eventos.ARCKHÉ.pro/loop-r-engenharia/"
   },
   "lado_card": {
     "rot": "El kit de este curso",
     "t": "kit/ en el repositorio del curso",
     "texto": "Evaluador, verificación de criterios, guardia de tests, detector de atajos, evals, juez y compuerta. Cada uno con ensayo sin costo, probado el 19/10/2026.",
     "link": "Abrir la carpeta kit/ en GitHub",
-    "href": "https://github.com/inematds/loop-r-eng-verificacao-v72/tree/main/kit"
+    "href": "https://github.com/linnoff88-dev/loop-r-eng-verificacao-v72/tree/main/kit"
   },
-  "rodape": "INEMA.CLUB · contenido abierto y gratuito · formato INEMA Learning v7.2 · Formación LOOP-R Ingeniería, curso 1 de 6 · <a href=\"https://eventos.inema.pro/loop-r-engenharia/\">eventos.inema.pro/loop-r-engenharia</a> · <a href=\"https://github.com/inematds/loop-r-eng-verificacao-v72/tree/main/kit\">kit del curso en GitHub</a> · <a href=\"https://inema.club/\">inema.club</a>",
+  "rodape": "ARCKHÉ AI · contenido abierto y gratuito · formato ARCKHÉ Learning v7.2 · Formación LOOP-R Ingeniería, curso 1 de 6 · <a href=\"https://eventos.ARCKHÉ.pro/loop-r-engenharia/\">eventos.ARCKHÉ.pro/loop-r-engenharia</a> · <a href=\"https://github.com/linnoff88-dev/loop-r-eng-verificacao-v72/tree/main/kit\">kit del curso en GitHub</a> · <a href=\"https://ARCKHÉ AI/\">ARCKHÉ AI</a>",
   "videos": {},
   "inicio": {
     "kicker": "Formación LOOP-R Ingeniería · curso 1 de 6 · 8 lecciones",
@@ -24,7 +24,7 @@
     "cta": "Empezar por la lección 1",
     "cta2": {
       "t": "Ver el área de la formación",
-      "href": "https://eventos.inema.pro/loop-r-engenharia/"
+      "href": "https://eventos.ARCKHÉ.pro/loop-r-engenharia/"
     },
     "capa_alt": "Mesa de inspección de noche con una lupa articulada sobre una placa, osciloscopio y terminal al fondo.",
     "numeros": [

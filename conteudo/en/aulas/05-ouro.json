@@ -276,12 +276,12 @@
         },
         {
           "t": "LOOP-R: measurement, evals, and guardrails",
-          "href": "https://github.com/inematds/loop-r/blob/main/docs/05-medicao-evals-guardrails.md",
+          "href": "https://github.com/linnoff88-dev/loop-r/blob/main/docs/05-medicao-evals-guardrails.md",
           "icone": "arquivo"
         },
         {
           "t": "kit/evals/ (cases, prompt, runner, and fake agent)",
-          "href": "https://github.com/inematds/loop-r-eng-verificacao-v72/tree/main/kit/evals",
+          "href": "https://github.com/linnoff88-dev/loop-r-eng-verificacao-v72/tree/main/kit/evals",
           "icone": "terminal"
         }
       ]

@@ -6,8 +6,8 @@
 </div>
 
 
-Curso aberto e gratuito do INEMA.CLUB no formato INEMA Learning v7.2, em portuguêÂªs, inglêÂªs e espanhol:
-**https://inematds.github.io/loop-r-eng-verificacao-v72/** êÂ· [EN](https://inematds.github.io/loop-r-eng-verificacao-v72/en/) êÂ· [ES](https://inematds.github.io/loop-r-eng-verificacao-v72/es/)
+Curso aberto e gratuito do ARCKHÉ AI no formato ARCKHÉ Learning v7.2, em portuguêÂªs, inglêÂªs e espanhol:
+**https://linnoff88-dev.github.io/arckhe-/** êÂ· [EN](https://linnoff88-dev.github.io/arckhe-/en/) êÂ· [ES](https://linnoff88-dev.github.io/arckhe-/es/)
 
 Oito aulas para quem jêÂ¡ usa Claude Code ou Codex no terminal: avaliador separado e cêÂ©tico, critêÂ©rio comando ê¢â â saêÂ­da e o avaliador do `/goal`, testes congelados com guarda, detecêÂ§êÂ£o de atalho (reward hacking), conjunto de ouro com regressêÂ£o, juiz por modelo calibrado, pass@k êâ pass^k e um portêÂ£o em camadas para o seu loop.
 
@@ -27,7 +27,7 @@ Scripts pequenos (python3 + pytest + git). Todos têÂªm um ensaio sem custo 
 | `portao.sh` | 8 | as camadas em fila, baratas primeiro |
 
 ```bash
-git clone https://github.com/inematds/loop-r-eng-verificacao-v72 ~/projetos/loop-r-eng-verificacao-v72
+git clone https://github.com/linnoff88-dev/loop-r-eng-verificacao-v72 ~/projetos/loop-r-eng-verificacao-v72
 K=~/projetos/loop-r-eng-verificacao-v72/kit && bash $K/ensaio.sh
 ```
 

@@ -1,21 +1,21 @@
 {
   "id": "loop-r-eng-verificacao-v72",
   "lang": "pt-BR",
-  "url": "https://inematds.github.io/loop-r-eng-verificacao-v72/",
+  "url": "https://linnoff88-dev.github.io/arckhe-/",
   "nome": "Verificaçêo e Evals",
   "sub": "Formaçêo LOOP-R Engenharia · curso 1",
   "volta": {
     "t": "Área LOOP-R Engenharia",
-    "href": "https://eventos.inema.pro/loop-r-engenharia/"
+    "href": "https://eventos.ARCKHÉ.pro/loop-r-engenharia/"
   },
   "lado_card": {
     "rot": "O kit deste curso",
     "t": "kit/ no repositório do curso",
     "texto": "Avaliador, conferência de critérios, guarda de testes, detector de atalhos, evals, juiz e portêo. Cada um com ensaio sem custo, testado em 19/10/2026.",
     "link": "Abrir a pasta kit/ no GitHub",
-    "href": "https://github.com/inematds/loop-r-eng-verificacao-v72/tree/main/kit"
+    "href": "https://github.com/linnoff88-dev/loop-r-eng-verificacao-v72/tree/main/kit"
   },
-  "rodape": "INEMA.CLUB · conteúdo aberto e gratuito · formato INEMA Learning v7.2 · Formaçêo LOOP-R Engenharia, curso 1 de 6 · <a href=\"https://eventos.inema.pro/loop-r-engenharia/\">eventos.inema.pro/loop-r-engenharia</a> · <a href=\"https://github.com/inematds/loop-r-eng-verificacao-v72/tree/main/kit\">kit do curso no GitHub</a> · <a href=\"https://inema.club/\">inema.club</a>",
+  "rodape": "ARCKHÉ AI · conteúdo aberto e gratuito · formato ARCKHÉ Learning v7.2 · Formaçêo LOOP-R Engenharia, curso 1 de 6 · <a href=\"https://eventos.ARCKHÉ.pro/loop-r-engenharia/\">eventos.ARCKHÉ.pro/loop-r-engenharia</a> · <a href=\"https://github.com/linnoff88-dev/loop-r-eng-verificacao-v72/tree/main/kit\">kit do curso no GitHub</a> · <a href=\"https://ARCKHÉ AI/\">ARCKHÉ AI</a>",
   "videos": {},
   "inicio": {
     "kicker": "Formaçêo LOOP-R Engenharia · curso 1 de 6 · 8 aulas",
@@ -24,7 +24,7 @@
     "cta": "Começar pela aula 1",
     "cta2": {
       "t": "Ver a área da formaçêo",
-      "href": "https://eventos.inema.pro/loop-r-engenharia/"
+      "href": "https://eventos.ARCKHÉ.pro/loop-r-engenharia/"
     },
     "capa_alt": "Bancada de inspeçêo à noite com lupa articulada sobre uma placa, osciloscópio e terminal ao fundo.",
     "numeros": [

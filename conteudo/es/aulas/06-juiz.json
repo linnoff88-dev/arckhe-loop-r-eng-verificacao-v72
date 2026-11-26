@@ -254,12 +254,12 @@
       "links": [
         {
           "t": "LOOP-R: el juez y cómo evitar que derive (docs/05, §5)",
-          "href": "https://github.com/inematds/loop-r/blob/main/docs/05-medicao-evals-guardrails.md",
+          "href": "https://github.com/linnoff88-dev/loop-r/blob/main/docs/05-medicao-evals-guardrails.md",
           "icone": "arquivo"
         },
         {
           "t": "LOOP-R: templates/rubrica.md",
-          "href": "https://github.com/inematds/loop-r/blob/main/templates/rubrica.md",
+          "href": "https://github.com/linnoff88-dev/loop-r/blob/main/templates/rubrica.md",
           "icone": "lista"
         },
         {
@@ -269,7 +269,7 @@
         },
         {
           "t": "kit/juiz/ (rúbrica, juez, calibración)",
-          "href": "https://github.com/inematds/loop-r-eng-verificacao-v72/tree/main/kit/juiz",
+          "href": "https://github.com/linnoff88-dev/loop-r-eng-verificacao-v72/tree/main/kit/juiz",
           "icone": "terminal"
         }
       ]

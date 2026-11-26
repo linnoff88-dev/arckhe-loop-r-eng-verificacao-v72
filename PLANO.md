@@ -24,4 +24,4 @@ Achado do ensaio (nêo corrigido no kit execucao-longa, só ensinado): com `PROT
 Simulaçêo: `simconversa` na aula 4 (o agente diz que o teste está errado e quer "ajustar"); `simfila` na aula 8 (camadas do portêo como etapas; a guarda reprova na 1ª execuçêo).
 Vídeo: nenhum vídeo publicado é deste tema (AUDITORIA §c); sem vídeo.
 Imagens: capa + inicio + 8 heroes pelo Codex (uma por vez), sem texto.
-Próximo curso da ordem: curso 2, `https://inematds.github.io/loop-r-eng-execucao-longa-v72/` (publicado em 19/10).
+Próximo curso da ordem: curso 2, `https://linnoff88-dev.github.io/arckhe-/` (publicado em 19/10).

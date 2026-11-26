@@ -229,8 +229,8 @@
       "titulo": "Para ir além",
       "links": [
         { "t": "Anthropic: Demystifying evals for AI agents (09/01/2026)", "href": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents", "icone": "lupa" },
-        { "t": "LOOP-R: mediçêo, evals e guarda-corpos", "href": "https://github.com/inematds/loop-r/blob/main/docs/05-medicao-evals-guardrails.md", "icone": "arquivo" },
-        { "t": "kit/evals/ (casos, prompt, runner e agente falso)", "href": "https://github.com/inematds/loop-r-eng-verificacao-v72/tree/main/kit/evals", "icone": "terminal" }
+        { "t": "LOOP-R: mediçêo, evals e guarda-corpos", "href": "https://github.com/linnoff88-dev/loop-r/blob/main/docs/05-medicao-evals-guardrails.md", "icone": "arquivo" },
+        { "t": "kit/evals/ (casos, prompt, runner e agente falso)", "href": "https://github.com/linnoff88-dev/loop-r-eng-verificacao-v72/tree/main/kit/evals", "icone": "terminal" }
       ]
     }
   ]
